@@ -1,13 +1,17 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div className="navbar">
       <div>
-        <p>Home</p>
+        <NavLink className="nav-link" to="/">
+          Home
+        </NavLink>
       </div>
       <div>
-        <p>Criar Post</p>
+        <NavLink className="nav-link" to="/new">
+          Criar Post
+        </NavLink>
       </div>
     </div>
   );

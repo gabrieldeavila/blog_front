@@ -1,12 +1,7 @@
-import React from "react";
-import Navbar from "./components/Navbar/index";
+import RoutesWrapper from "./routes";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-    </div>
-  );
+  return <RoutesWrapper />;
 }
 
 export default App;
