@@ -1,5 +1,6 @@
-export const GET_POSTS = "GET_POSTS";
 import { Post } from "./../interfaces/Post";
+
+export const GET_POSTS = "GET_POSTS";
 
 export interface PostsStateType {
   posts: Post[];
