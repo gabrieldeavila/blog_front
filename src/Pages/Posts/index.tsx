@@ -14,8 +14,7 @@ export default function Posts() {
   const posts = useSelector((state: AppState) => state.posts);
 
   return (
-    <div>
-      <h1>Posts</h1>
+    <div className="posts">
       {posts.posts.map((post: Post) => (
         <div>
           <h1>{post.title}</h1>
