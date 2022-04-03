@@ -1,4 +1,4 @@
-import { PostsActionTypes, PostsStateType } from "../types/PostsType";
+import { ADD_POST, PostsActionTypes, PostsStateType } from "../types/PostsType";
 import { GET_POSTS } from "./../types/PostsType";
 
 const initialStatePosts: PostsStateType = {
@@ -13,6 +13,10 @@ export const getPostsReducer = (
     case GET_POSTS:
       return {
         posts: action.payload,
+      };
+    case ADD_POST:
+      return {
+        posts: [...state.posts, action.payload],
       };
     default:
       return state;
